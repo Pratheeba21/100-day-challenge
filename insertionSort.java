@@ -1,5 +1,5 @@
 import java.io.*;
-class insertion
+class insertionSort
 {
 	int n,b;
 	int a[]=new int[5];
