@@ -24,7 +24,7 @@ class addition extends multiplication
 		System.out.println("Addition of two integers="+add);
 	}
 }
-class override
+class overide
 {
 	public static void main(String s[]) throws Exception
 	{
