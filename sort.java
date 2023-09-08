@@ -1,4 +1,4 @@
-public class Sort{    
+public class sort{    
     public static void main(String[] args) {           
         int [] arr = new int [] {53, 26, 18, 67, 31};     
         int temp = 0;       
