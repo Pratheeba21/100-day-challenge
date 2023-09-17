@@ -1,4 +1,4 @@
-import java.io.*;
+import java.io.DataInputStream;
 class stack
 {
 	int a[]=new int[5];
@@ -20,7 +20,7 @@ class stack
 			int i=Integer.parseInt(d.readLine());
 			top++;
 			a[i]=top;
-				System.out.println("You value is pushed in stack");
+			System.out.println("You value is pushed in stack");
 		}
 	}
 	void pop()
