@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class SpeedDistanceTimeCalculator 
+public class speed-distance-time-calculator 
 {
     public static void main(String[] args) 
    {
