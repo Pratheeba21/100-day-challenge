@@ -1,4 +1,5 @@
-public class thiss {
+public class thiss 
+{
 	String name;
 	int age;
 	thiss(String name, int age)
@@ -6,7 +7,10 @@ public class thiss {
 		this.name = name;
 		this.age = age;
 	}
-	public String get_name() { return name; }
+	public String get_name()
+	{ 
+		return name; 
+	}
 	public void change_name(String name)
 	{
 		this.name = name;
