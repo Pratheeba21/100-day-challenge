@@ -14,7 +14,7 @@ class excepn
         }
         catch (NumberFormatException ex) 
         {
-            System.out.println( "NumberFormatException is occurred");
+            System.out.println("NumberFormatException is occurred");
         }
         return res;
     }
