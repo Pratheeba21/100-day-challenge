@@ -12,8 +12,7 @@ public class frequency
             {  
                 if(arr[i] == arr[j])
                 {  
-                    count++;  
-                    //To avoid counting same element again  
+                    count++;   
                     fr[j] = visited;  
                 }  
             }  
