@@ -1,4 +1,4 @@
-// Shape.java
+
 class Shape {
     private String color;
 
@@ -19,7 +19,7 @@ class Shape {
     }
 }
 
-// Circle.java
+
 class Circle extends Shape {
     private double radius;
 
@@ -34,7 +34,7 @@ class Circle extends Shape {
     }
 }
 
-// Rectangle.java
+
 class Rectangle extends Shape {
     private double length;
     private double width;
@@ -51,7 +51,7 @@ class Rectangle extends Shape {
     }
 }
 
-// Main.java
+
 public class oops{
     public static void main(String[] args) {
         Circle circle = new Circle("Red", 5.0);
