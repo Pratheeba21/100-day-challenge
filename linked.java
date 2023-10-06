@@ -1,10 +1,7 @@
-// Java program to convert 
-// LinkedList to Array 
-
 import java.util.Arrays;
 import java.util.LinkedList; 
-
-public class linked { 
+public class linked 
+{ 
 
 	// Function to convert LinkedList to Array 
 	public static <T> Object[] convertLinkedListToArray(LinkedList<T> linkedList) 
