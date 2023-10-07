@@ -1,12 +1,8 @@
 import java.io.*; 
-
-  
-
-public class MergeTwoArrays2 { 
-
-    public static void main(String[] args) 
-
-    { 
+public class mergeArrays
+{ 
+  public static void main(String[] args) 
+  {
 
   
 
@@ -46,7 +42,8 @@ public class MergeTwoArrays2 {
 
         // array into resultant array 
 
-        for (int i = 0; i < a1; i = i + 1) { 
+        for (int i = 0; i < a1; i = i + 1) 
+        { 
 
             // Storing the elements in  
 
@@ -62,7 +59,8 @@ public class MergeTwoArrays2 {
 
         // array into resultant array 
 
-        for (int i = 0; i < b1; i = i + 1) { 
+        for (int i = 0; i < b1; i = i + 1) 
+        { 
 
   
 
@@ -80,7 +78,8 @@ public class MergeTwoArrays2 {
 
         // resultant array after merging 
 
-        for (int i = 0; i < c1; i = i + 1) { 
+        for (int i = 0; i < c1; i = i + 1) 
+        { 
 
               
 
