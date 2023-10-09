@@ -1,9 +1,11 @@
-public class DeleteEnd {  
+public class DeleteEnd 
+{  
     //Represents the node of list.  
     public class Node{  
         int data;  
         Node next;  
-        public Node(int data) {  
+        public Node(int data) 
+        {  
             this.data = data;  
         }  
     }  
@@ -13,17 +15,20 @@ public class DeleteEnd {
     public Node tail = null;  
   
     //This function will add the new node at the end of the list.  
-    public void add(int data){  
+    public void add(int data)
+    {  
         //Create new node  
         Node newNode = new Node(data);  
         //Checks if the list is empty.  
-        if(head == null) {  
+        if(head == null) 
+        {  
              //If list is empty, both head and tail would point to new node.  
             head = newNode;  
             tail = newNode;  
             newNode.next = head;  
         }  
-        else {  
+        else 
+        {  
             //tail will point to new node.  
             tail.next = newNode;  
             //New node will become new tail.  
@@ -34,17 +39,21 @@ public class DeleteEnd {
     }  
   
     //Deletes node from end of the list  
-    public void deleteEnd() {  
+    public void deleteEnd() 
+    {  
         //Checks whether list is empty  
-        if(head == null) {  
+        if(head == null) 
+        {  
             return;  
         }  
         else {  
             //Checks whether contain only one element  
-            if(head != tail ) {  
+            if(head != tail ) 
+            {  
                 Node current = head;  
                 //Loop will iterate till the second last element as current.next is pointing to tail  
-                while(current.next != tail) {  
+                while(current.next != tail) 
+                {  
                     current = current.next;  
                 }  
                 //Second last element will be new tail  
@@ -54,20 +63,25 @@ public class DeleteEnd {
             }  
             //If the list contains only one element  
             //Then it will remove it and both head and tail will point to null  
-            else {  
+            else 
+            {  
                 head = tail = null;  
             }  
         }  
     }  
   
     //Displays all the nodes in the list  
-    public void display() {  
+    public void display() 
+    {  
         Node current = head;  
-        if(head == null) {  
+        if(head == null) 
+        {  
             System.out.println("List is empty");  
         }  
-        else {  
-             do{  
+        else 
+        {  
+             do
+             {  
                 //Prints each node by incrementing pointer.  
                 System.out.print(" "+ current.data);  
                 current = current.next;  
@@ -76,7 +90,8 @@ public class DeleteEnd {
         }  
     }  
   
-    public static void main(String[] args) {  
+    public static void main(String[] args) 
+    {  
         DeleteEnd cl = new DeleteEnd();  
         //Adds data to the list  
         cl.add(1);  
@@ -86,7 +101,8 @@ public class DeleteEnd {
         //Printing original list  
         System.out.println("Original List: ");  
         cl.display();  
-        while(cl.head != null) {  
+        while(cl.head != null) 
+        {  
             cl.deleteEnd();  
             //Printing updated list  
             System.out.println("Updated List: ");  
