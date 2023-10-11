@@ -1,10 +1,12 @@
-public class reverseList {  
+public class reverseList 
+{  
     //Represent a node of the singly linked list  
     class Node{  
         int data;  
         Node next;  
   
-        public Node(int data) {  
+        public Node(int data) 
+        {  
             this.data = data;  
             this.next = null;  
         }  
@@ -15,17 +17,20 @@ public class reverseList {
     public Node tail = null;  
   
     //addNode() will add a new node to the list  
-    public void addNode(int data) {  
+    public void addNode(int data) 
+    {  
         //Create a new node  
         Node newNode = new Node(data);  
   
         //Checks if the list is empty  
-        if(head == null) {  
+        if(head == null) 
+        {  
             //If list is empty, both head and tail will point to new node  
             head = newNode;  
             tail = newNode;  
         }  
-        else {  
+        else 
+        {  
             //newNode will be added after tail such that tail's next will point to newNode  
             tail.next = newNode;  
             //newNode will become new tail of the list  
@@ -34,15 +39,19 @@ public class reverseList {
     }  
   
     //reverse() will help the reverse the order of the list  
-    public void reverse(Node current) {  
+    public void reverse(Node current) 
+    {  
         //Checks if list is empty  
-        if(head == null) {  
+        if(head == null) 
+        {  
             System.out.println("List is empty");  
             return;  
         }  
-        else {  
+        else 
+        {  
             //Checks if the next node is null, if yes then prints it.  
-            if(current.next == null) {  
+            if(current.next == null) 
+            {  
                 System.out.print(current.data + " ");  
                 return;  
             }  
@@ -53,16 +62,19 @@ public class reverseList {
     }  
   
     //display() will display all the nodes present in the list  
-    public void display() {  
+    public void display() 
+    {  
         //Node current will point to head  
         Node current = head;  
   
-        if(head == null) {  
+        if(head == null) 
+        {  
             System.out.println("List is empty");  
             return;  
         }  
   
-        while(current != null) {  
+        while(current != null) 
+        {  
             //Prints each node by incrementing pointer  
             System.out.print(current.data + " ");  
             current = current.next;  
@@ -70,7 +82,8 @@ public class reverseList {
         System.out.println();  
     }  
   
-    public static void main(String[] args) {  
+    public static void main(String[] args) 
+    {  
   
         reverseList sList = new reverseList();  
   
