@@ -1,5 +1,4 @@
-public class singlyList {    
-    //Represent a node of the singly linked list    
+public class singlyList {       
     class Node{    
         int data;    
         Node next;    
@@ -8,34 +7,23 @@ public class singlyList {
             this.data = data;    
             this.next = null;    
         }    
-    }    
-     
-    //Represent the head and tail of the singly linked list    
+    }       
     public Node head = null;    
     public Node tail = null;    
         
-    //addNode() will add a new node to the list    
     public void addNode(int data) {    
-        //Create a new node    
         Node newNode = new Node(data);    
-            
-        //Checks if the list is empty    
-        if(head == null) {    
-            //If list is empty, both head and tail will point to new node    
+        if(head == null) {     
             head = newNode;    
             tail = newNode;    
         }    
-        else {    
-            //newNode will be added after tail such that tail's next will point to newNode    
-            tail.next = newNode;    
-            //newNode will become new tail of the list    
+        else {        
+            tail.next = newNode;     
             tail = newNode;    
         }    
     }    
-        
-    //display() will display all the nodes present in the list    
-    public void display() {    
-        //Node current will point to head    
+           
+    public void display() {       
         Node current = head;    
             
         if(head == null) {    
@@ -43,8 +31,7 @@ public class singlyList {
             return;    
         }    
         System.out.println("Nodes of singly linked list: ");    
-        while(current != null) {    
-            //Prints each node by incrementing pointer    
+        while(current != null) {      
             System.out.print(current.data + " ");    
             current = current.next;    
         }    
@@ -54,14 +41,12 @@ public class singlyList {
     public static void main(String[] args) {    
             
         singlyList sList = new singlyList();    
-            
-        //Add nodes to the list    
+              
         sList.addNode(1);    
         sList.addNode(2);    
         sList.addNode(3);    
         sList.addNode(4);    
-            
-        //Displays the nodes present in the list    
+                
         sList.display();    
     }    
 }    
