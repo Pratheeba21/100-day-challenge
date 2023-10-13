@@ -4,7 +4,6 @@ public class singlyList
     {    
         int data;    
         Node next;    
-            
         public Node(int data) 
         {    
             this.data = data;    
@@ -13,7 +12,6 @@ public class singlyList
     }       
     public Node head = null;    
     public Node tail = null;    
-        
     public void addNode(int data) 
     {    
         Node newNode = new Node(data);    
@@ -31,8 +29,7 @@ public class singlyList
            
     public void display() 
     {       
-        Node current = head;    
-            
+        Node current = head;  
         if(head == null) 
         {    
             System.out.println("List is empty");    
@@ -49,14 +46,12 @@ public class singlyList
         
     public static void main(String[] args) 
     {    
-            
         singlyList sList = new singlyList();    
               
         sList.addNode(1);    
         sList.addNode(2);    
         sList.addNode(3);    
         sList.addNode(4);    
-                
         sList.display();    
     }    
 }    
